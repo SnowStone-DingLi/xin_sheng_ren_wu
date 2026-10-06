@@ -1,0 +1,17 @@
+﻿SFT 样本 2000 条, device=cuda
+[LoRA] 注入 48 个线性层 targets=('q_proj', 'v_proj') r=8 alpha=16
+LoRA 可训练参数 0.541M / 494.6M = 0.1093%
+有效编码样本 2000
+step   10/125 | loss 1.2507 | lr 1.98e-04 | 17s
+step   20/125 | loss 1.2385 | lr 1.90e-04 | 47s
+step   30/125 | loss 1.2082 | lr 1.76e-04 | 61s
+step   40/125 | loss 1.2170 | lr 1.57e-04 | 74s
+step   50/125 | loss 1.1896 | lr 1.34e-04 | 86s
+step   60/125 | loss 1.2119 | lr 1.09e-04 | 97s
+step   70/125 | loss 1.2099 | lr 8.29e-05 | 108s
+step   80/125 | loss 1.2434 | lr 5.82e-05 | 119s
+step   90/125 | loss 1.1926 | lr 3.64e-05 | 130s
+step  100/125 | loss 1.2129 | lr 1.87e-05 | 142s
+step  110/125 | loss 1.2115 | lr 6.51e-06 | 153s
+step  120/125 | loss 1.1814 | lr 5.37e-07 | 165s
+[LoRA] adapter 已保存到 D:\py_code\xin_sheng_ren_wu\llm-beginner-master\llm-beginner-master\task-3-sft-dpo\ckpt\sft（96 个张量）

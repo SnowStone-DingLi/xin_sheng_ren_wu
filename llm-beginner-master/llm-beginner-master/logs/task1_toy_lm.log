@@ -1,0 +1,9 @@
+﻿toy LM: 语料 16647 字, 词表 2515, train=14982 dev=1665
+step    0 | train loss 7.9879 | dev loss 7.9033 | 0.9s
+step   50 | train loss 6.1598 | dev loss 6.7060 | 2.1s
+step  100 | train loss 5.4088 | dev loss 6.7669 | 3.4s
+step  150 | train loss 4.4268 | dev loss 7.1053 | 4.5s
+step  200 | train loss 3.6348 | dev loss 7.7322 | 5.6s
+step  250 | train loss 3.2036 | dev loss 8.2856 | 6.6s
+step  300 | train loss 2.8734 | dev loss 8.4504 | 7.7s
+[causal 泄漏检查] 改动未来 V 后过去位置最大变化 = 0.000e+00 (通过)

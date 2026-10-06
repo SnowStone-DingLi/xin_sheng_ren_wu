@@ -1,0 +1,5 @@
+﻿[通过] attention_correctness: {"test": "attention_correctness", "pass": true, "max_abs_diff": 9.5367431640625e-07}
+[通过] causal_mask: {"test": "causal_mask", "pass": true, "leaked_diff": 0.0}
+[通过] classifier_accuracy: {"test": "classifier_accuracy", "pass": true, "accuracy": 0.8533, "baseline_reference": 0.85}
+
+结果写入 eval\result.json

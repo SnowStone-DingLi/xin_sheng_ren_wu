@@ -1,0 +1,21 @@
+Task 2 Link Prediction: Full vs Link Neighbor Sampling Comparison - 2026-09-08 14:51:19
+==============================================================================================================
+Dataset    Model        Layers  LR      Mode    Test AUC   Test AP    Time(s)   
+--------------------------------------------------------------------------------------------------------------
+Flickr     GCN          2       0.01    full    0.5325     0.5311     3.89      
+Flickr     GCN          2       0.005   full    0.7931     0.8180     4.29      
+Flickr     GCN          3       0.01    full    0.8270     0.8344     4.99      
+Flickr     GCN          3       0.005   full    0.8258     0.8393     4.98      
+Flickr     GAT          2       0.01    full    0.5000     0.5000     9.68      
+Flickr     GAT          2       0.005   full    0.5231     0.4922     9.64      
+Flickr     GAT          3       0.01    full    0.6427     0.6983     14.96     
+Flickr     GAT          3       0.005   full    0.7066     0.7372     15.00     
+Flickr     GraphSAGE    2       0.01    full    0.5000     0.5000     4.31      
+Flickr     GraphSAGE    2       0.005   full    0.5000     0.5000     4.37      
+Flickr     GraphSAGE    3       0.01    full    0.5279     0.5157     5.32      
+Flickr     GraphSAGE    3       0.005   full    0.5327     0.5212     5.12      
+Flickr     GIN          2       0.01    full    0.5015     0.5023     4.66      
+Flickr     GIN          2       0.005   full    0.6062     0.6537     4.89      
+Flickr     GIN          3       0.01    full    0.5688     0.5504     5.11      
+Flickr     GIN          3       0.005   full    0.5894     0.5737     5.55      
+==============================================================================================================

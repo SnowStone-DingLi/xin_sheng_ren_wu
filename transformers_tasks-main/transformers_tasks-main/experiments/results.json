@@ -1,0 +1,11 @@
+{
+  "task1_text_matching_pointwise": "SUCCESS",
+  "task2_information_extraction": "SUCCESS",
+  "task3_prompt_pet": "SUCCESS",
+  "task4_text_classification": "SUCCESS",
+  "task5_rlhf": "SUCCESS",
+  "task6_text_generation": "SUCCESS",
+  "task7_llm_application": "SUCCESS",
+  "task8_llm_training": "SUCCESS",
+  "task9_tokenizer_viewer": "SUCCESS"
+}

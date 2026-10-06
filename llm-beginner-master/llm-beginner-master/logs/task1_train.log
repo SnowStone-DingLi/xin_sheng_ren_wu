@@ -1,0 +1,16 @@
+﻿train=7166 dev=300 device=cuda
+vocab_size=3627
+model params=1.29M residual=True layernorm=True pre_ln=True
+epoch 01 | loss 0.5268 | dev_acc 0.7800 | lr 2.99e-04 | 13s
+epoch 02 | loss 0.3803 | dev_acc 0.8400 | lr 2.89e-04 | 24s
+epoch 03 | loss 0.3381 | dev_acc 0.8433 | lr 2.68e-04 | 35s
+epoch 04 | loss 0.3016 | dev_acc 0.8500 | lr 2.39e-04 | 47s
+epoch 05 | loss 0.2845 | dev_acc 0.8500 | lr 2.02e-04 | 58s
+epoch 06 | loss 0.2519 | dev_acc 0.8533 | lr 1.62e-04 | 69s
+epoch 07 | loss 0.2286 | dev_acc 0.8500 | lr 1.21e-04 | 80s
+epoch 08 | loss 0.2038 | dev_acc 0.8400 | lr 8.21e-05 | 92s
+epoch 09 | loss 0.1942 | dev_acc 0.8333 | lr 4.83e-05 | 103s
+epoch 10 | loss 0.1817 | dev_acc 0.8400 | lr 2.21e-05 | 115s
+epoch 11 | loss 0.1734 | dev_acc 0.8367 | lr 5.61e-06 | 124s
+epoch 12 | loss 0.1631 | dev_acc 0.8400 | lr 1.31e-09 | 134s
+best dev_acc=0.8533 -> ckpt/best.pt

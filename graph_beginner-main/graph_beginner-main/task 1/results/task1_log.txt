@@ -1,0 +1,117 @@
+Task 1 Node Classification: Full vs Neighbor Sampling Comparison - 2026-09-08 17:33:21
+====================================================================================================
+Dataset    Model        Layers  LR      Mode    Test Acc   Time(s)   
+----------------------------------------------------------------------------------------------------
+Cora       GCN          2       0.01    full    0.8070     2.60      
+Cora       GCN          2       0.01    sample  0.8100     1.98      
+  -> Sample vs Full: Test Acc delta=+0.0030, Time delta=-0.62s
+Cora       GCN          2       0.005   full    0.7970     2.48      
+Cora       GCN          2       0.005   sample  0.8050     1.92      
+  -> Sample vs Full: Test Acc delta=+0.0080, Time delta=-0.56s
+Cora       GCN          3       0.01    full    0.8240     2.93      
+Cora       GCN          3       0.01    sample  0.7960     2.44      
+  -> Sample vs Full: Test Acc delta=-0.0280, Time delta=-0.49s
+Cora       GCN          3       0.005   full    0.8120     2.96      
+Cora       GCN          3       0.005   sample  0.8140     2.47      
+  -> Sample vs Full: Test Acc delta=+0.0020, Time delta=-0.49s
+Cora       GAT          2       0.01    full    0.7960     3.02      
+Cora       GAT          2       0.01    sample  0.8030     2.42      
+  -> Sample vs Full: Test Acc delta=+0.0070, Time delta=-0.60s
+Cora       GAT          2       0.005   full    0.8030     3.15      
+Cora       GAT          2       0.005   sample  0.7790     2.54      
+  -> Sample vs Full: Test Acc delta=-0.0240, Time delta=-0.61s
+Cora       GAT          3       0.01    full    0.7870     3.73      
+Cora       GAT          3       0.01    sample  0.7450     3.01      
+  -> Sample vs Full: Test Acc delta=-0.0420, Time delta=-0.72s
+Cora       GAT          3       0.005   full    0.7590     3.75      
+Cora       GAT          3       0.005   sample  0.7650     3.04      
+  -> Sample vs Full: Test Acc delta=+0.0060, Time delta=-0.71s
+Cora       GraphSAGE    2       0.01    full    0.8070     2.14      
+Cora       GraphSAGE    2       0.01    sample  0.8040     1.74      
+  -> Sample vs Full: Test Acc delta=-0.0030, Time delta=-0.40s
+Cora       GraphSAGE    2       0.005   full    0.7940     2.08      
+Cora       GraphSAGE    2       0.005   sample  0.7970     1.73      
+  -> Sample vs Full: Test Acc delta=+0.0030, Time delta=-0.35s
+Cora       GraphSAGE    3       0.01    full    0.8010     2.41      
+Cora       GraphSAGE    3       0.01    sample  0.7890     2.08      
+  -> Sample vs Full: Test Acc delta=-0.0120, Time delta=-0.33s
+Cora       GraphSAGE    3       0.005   full    0.8130     2.40      
+Cora       GraphSAGE    3       0.005   sample  0.7970     2.11      
+  -> Sample vs Full: Test Acc delta=-0.0160, Time delta=-0.29s
+Cora       GIN          2       0.01    full    0.7460     2.30      
+Cora       GIN          2       0.01    sample  0.7610     1.85      
+  -> Sample vs Full: Test Acc delta=+0.0150, Time delta=-0.45s
+Cora       GIN          2       0.005   full    0.7490     2.23      
+Cora       GIN          2       0.005   sample  0.7540     1.83      
+  -> Sample vs Full: Test Acc delta=+0.0050, Time delta=-0.40s
+Cora       GIN          3       0.01    full    0.6520     2.64      
+Cora       GIN          3       0.01    sample  0.7400     2.21      
+  -> Sample vs Full: Test Acc delta=+0.0880, Time delta=-0.43s
+Cora       GIN          3       0.005   full    0.6770     2.57      
+Cora       GIN          3       0.005   sample  0.7300     2.59      
+  -> Sample vs Full: Test Acc delta=+0.0530, Time delta=+0.02s
+Citeseer   GCN          2       0.01    full    0.6790     2.48      
+Citeseer   GCN          2       0.01    sample  0.6700     1.98      
+  -> Sample vs Full: Test Acc delta=-0.0090, Time delta=-0.50s
+Citeseer   GCN          2       0.005   full    0.6770     2.40      
+Citeseer   GCN          2       0.005   sample  0.6770     1.99      
+  -> Sample vs Full: Test Acc delta=+0.0000, Time delta=-0.41s
+Citeseer   GCN          3       0.01    full    0.6990     2.99      
+Citeseer   GCN          3       0.01    sample  0.6530     2.42      
+  -> Sample vs Full: Test Acc delta=-0.0460, Time delta=-0.57s
+Citeseer   GCN          3       0.005   full    0.6690     2.88      
+Citeseer   GCN          3       0.005   sample  0.6860     2.37      
+  -> Sample vs Full: Test Acc delta=+0.0170, Time delta=-0.51s
+Citeseer   GAT          2       0.01    full    0.6800     3.15      
+Citeseer   GAT          2       0.01    sample  0.6840     2.40      
+  -> Sample vs Full: Test Acc delta=+0.0040, Time delta=-0.75s
+Citeseer   GAT          2       0.005   full    0.6770     3.11      
+Citeseer   GAT          2       0.005   sample  0.6970     2.45      
+  -> Sample vs Full: Test Acc delta=+0.0200, Time delta=-0.66s
+Citeseer   GAT          3       0.01    full    0.6660     3.80      
+Citeseer   GAT          3       0.01    sample  0.6750     3.09      
+  -> Sample vs Full: Test Acc delta=+0.0090, Time delta=-0.71s
+Citeseer   GAT          3       0.005   full    0.6830     3.93      
+Citeseer   GAT          3       0.005   sample  0.6810     3.02      
+  -> Sample vs Full: Test Acc delta=-0.0020, Time delta=-0.91s
+Citeseer   GraphSAGE    2       0.01    full    0.6850     2.15      
+Citeseer   GraphSAGE    2       0.01    sample  0.6780     1.71      
+  -> Sample vs Full: Test Acc delta=-0.0070, Time delta=-0.44s
+Citeseer   GraphSAGE    2       0.005   full    0.6830     2.12      
+Citeseer   GraphSAGE    2       0.005   sample  0.6790     1.72      
+  -> Sample vs Full: Test Acc delta=-0.0040, Time delta=-0.40s
+Citeseer   GraphSAGE    3       0.01    full    0.6560     2.35      
+Citeseer   GraphSAGE    3       0.01    sample  0.6710     2.05      
+  -> Sample vs Full: Test Acc delta=+0.0150, Time delta=-0.30s
+Citeseer   GraphSAGE    3       0.005   full    0.6820     2.37      
+Citeseer   GraphSAGE    3       0.005   sample  0.6670     2.05      
+  -> Sample vs Full: Test Acc delta=-0.0150, Time delta=-0.32s
+Citeseer   GIN          2       0.01    full    0.6250     2.28      
+Citeseer   GIN          2       0.01    sample  0.5990     1.86      
+  -> Sample vs Full: Test Acc delta=-0.0260, Time delta=-0.42s
+Citeseer   GIN          2       0.005   full    0.5660     2.28      
+Citeseer   GIN          2       0.005   sample  0.6120     1.80      
+  -> Sample vs Full: Test Acc delta=+0.0460, Time delta=-0.48s
+Citeseer   GIN          3       0.01    full    0.5450     2.62      
+Citeseer   GIN          3       0.01    sample  0.5520     2.18      
+  -> Sample vs Full: Test Acc delta=+0.0070, Time delta=-0.44s
+Citeseer   GIN          3       0.005   full    0.5200     2.63      
+Citeseer   GIN          3       0.005   sample  0.5720     2.24      
+  -> Sample vs Full: Test Acc delta=+0.0520, Time delta=-0.39s
+Flickr     GCN          2       0.01    full    0.5037     3.89      
+Flickr     GCN          2       0.005   full    0.4983     3.94      
+Flickr     GCN          3       0.01    full    0.4855     4.90      
+Flickr     GCN          3       0.005   full    0.4894     4.90      
+Flickr     GAT          2       0.01    full    0.5039     11.39     
+Flickr     GAT          2       0.005   full    0.5029     11.45     
+Flickr     GAT          3       0.01    full    0.4965     19.14     
+Flickr     GAT          3       0.005   full    0.5027     19.20     
+Flickr     GraphSAGE    2       0.01    full    0.4904     5.48      
+Flickr     GraphSAGE    2       0.005   full    0.5011     5.41      
+Flickr     GraphSAGE    3       0.01    full    0.5064     6.05      
+Flickr     GraphSAGE    3       0.005   full    0.5098     6.05      
+Flickr     GIN          2       0.01    full    0.4234     5.71      
+Flickr     GIN          2       0.005   full    0.4234     5.71      
+Flickr     GIN          3       0.01    full    0.4296     6.38      
+Flickr     GIN          3       0.005   full    0.4456     6.41      
+====================================================================================================

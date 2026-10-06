@@ -1,0 +1,13 @@
+﻿DPO 偏好对 500 条, beta=0.1, device=cuda
+[LoRA] 注入 48 个线性层 targets=('q_proj', 'v_proj') r=8 alpha=16
+[LoRA] 注入 48 个线性层 targets=('q_proj', 'v_proj') r=8 alpha=16
+[LoRA] 已合并 48 个层
+有效偏好对 500
+step   5/31 | loss 0.6928 | reward margin 0.004 | 51s
+step  10/31 | loss 0.6780 | reward margin 0.040 | 127s
+step  15/31 | loss 0.6510 | reward margin 0.100 | 202s
+step  20/31 | loss 0.6225 | reward margin 0.174 | 272s
+step  25/31 | loss 0.6444 | reward margin 0.125 | 320s
+step  30/31 | loss 0.6186 | reward margin 0.187 | 349s
+最终 reward margin: 0.167
+[LoRA] adapter 已保存到 D:\py_code\xin_sheng_ren_wu\llm-beginner-master\llm-beginner-master\task-3-sft-dpo\ckpt\dpo（96 个张量）

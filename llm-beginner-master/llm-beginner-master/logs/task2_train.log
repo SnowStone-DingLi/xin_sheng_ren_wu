@@ -1,0 +1,19 @@
+﻿train chars=14982 dev chars=1665 device=cuda
+训练 BPE 分词器 ...
+BPE 完成：vocab_size=356，用时 3s
+train tokens=29754 dev tokens=3341
+model params=0.64M block_size=64
+step     0 | loss 5.9006 | dev_ppl   360.30 | lr 6.67e-05 | 1s
+step   100 | loss 3.6928 | dev_ppl    37.68 | lr 1.99e-03 | 6s
+step   200 | loss 3.3584 | dev_ppl    30.71 | lr 1.93e-03 | 10s
+step   300 | loss 3.1777 | dev_ppl    30.25 | lr 1.80e-03 | 14s
+step   400 | loss 3.0643 | dev_ppl    31.35 | lr 1.61e-03 | 19s
+step   500 | loss 2.8907 | dev_ppl    34.21 | lr 1.38e-03 | 24s
+step   600 | loss 2.7824 | dev_ppl    36.96 | lr 1.13e-03 | 28s
+step   700 | loss 2.6668 | dev_ppl    40.22 | lr 8.65e-04 | 32s
+step   800 | loss 2.5469 | dev_ppl    43.38 | lr 6.19e-04 | 37s
+step   900 | loss 2.4663 | dev_ppl    45.18 | lr 4.05e-04 | 41s
+step  1000 | loss 2.4047 | dev_ppl    47.24 | lr 2.39e-04 | 46s
+step  1100 | loss 2.3953 | dev_ppl    47.84 | lr 1.35e-04 | 50s
+step  1200 | loss 2.3972 | dev_ppl    48.66 | lr 1.00e-04 | 55s
+best dev_ppl=30.25 -> ckpt/best.pt

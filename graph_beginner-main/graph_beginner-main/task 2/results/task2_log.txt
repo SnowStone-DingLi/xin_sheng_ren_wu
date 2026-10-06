@@ -1,0 +1,101 @@
+Task 2 Link Prediction: Full vs Link Neighbor Sampling Comparison - 2026-09-08 09:20:16
+==============================================================================================================
+Dataset    Model        Layers  LR      Mode    Test AUC   Test AP    Time(s)   
+--------------------------------------------------------------------------------------------------------------
+Cora       GCN          2       0.01    full    0.8860     0.8864     2.00      
+Cora       GCN          2       0.01    sample  0.9019     0.8998     45.64     
+  -> Sample vs Full: AUC delta=+0.0159, AP delta=+0.0134, Time delta=+43.64s
+Cora       GCN          2       0.005   full    0.9237     0.9270     1.82      
+Cora       GCN          2       0.005   sample  0.9068     0.9099     44.93     
+  -> Sample vs Full: AUC delta=-0.0169, AP delta=-0.0171, Time delta=+43.11s
+Cora       GCN          3       0.01    full    0.8759     0.8739     2.18      
+Cora       GCN          3       0.01    sample  0.8349     0.8324     50.24     
+  -> Sample vs Full: AUC delta=-0.0410, AP delta=-0.0415, Time delta=+48.06s
+Cora       GCN          3       0.005   full    0.8854     0.8718     2.15      
+Cora       GCN          3       0.005   sample  0.8587     0.8479     52.93     
+  -> Sample vs Full: AUC delta=-0.0267, AP delta=-0.0239, Time delta=+50.78s
+Cora       GAT          2       0.01    full    0.8952     0.8756     2.26      
+Cora       GAT          2       0.01    sample  0.8808     0.8743     58.00     
+  -> Sample vs Full: AUC delta=-0.0144, AP delta=-0.0013, Time delta=+55.74s
+Cora       GAT          2       0.005   full    0.9008     0.8936     2.21      
+Cora       GAT          2       0.005   sample  0.9145     0.9085     58.27     
+  -> Sample vs Full: AUC delta=+0.0137, AP delta=+0.0149, Time delta=+56.06s
+Cora       GAT          3       0.01    full    0.6127     0.6265     2.76      
+Cora       GAT          3       0.01    sample  0.8120     0.7849     60.79     
+  -> Sample vs Full: AUC delta=+0.1993, AP delta=+0.1584, Time delta=+58.03s
+Cora       GAT          3       0.005   full    0.5930     0.6005     3.14      
+Cora       GAT          3       0.005   sample  0.7349     0.6967     66.22     
+  -> Sample vs Full: AUC delta=+0.1419, AP delta=+0.0962, Time delta=+63.08s
+Cora       GraphSAGE    2       0.01    full    0.7806     0.7611     1.84      
+Cora       GraphSAGE    2       0.01    sample  0.8587     0.8560     50.09     
+  -> Sample vs Full: AUC delta=+0.0781, AP delta=+0.0949, Time delta=+48.25s
+Cora       GraphSAGE    2       0.005   full    0.8688     0.8496     1.65      
+Cora       GraphSAGE    2       0.005   sample  0.8718     0.8604     41.42     
+  -> Sample vs Full: AUC delta=+0.0030, AP delta=+0.0108, Time delta=+39.77s
+Cora       GraphSAGE    3       0.01    full    0.8056     0.7684     1.74      
+Cora       GraphSAGE    3       0.01    sample  0.7996     0.7737     44.92     
+  -> Sample vs Full: AUC delta=-0.0060, AP delta=+0.0053, Time delta=+43.18s
+Cora       GraphSAGE    3       0.005   full    0.8347     0.7949     1.77      
+Cora       GraphSAGE    3       0.005   sample  0.8436     0.8294     44.14     
+  -> Sample vs Full: AUC delta=+0.0089, AP delta=+0.0345, Time delta=+42.37s
+Cora       GIN          2       0.01    full    0.6187     0.6526     1.86      
+Cora       GIN          2       0.01    sample  0.7999     0.8051     43.23     
+  -> Sample vs Full: AUC delta=+0.1812, AP delta=+0.1525, Time delta=+41.37s
+Cora       GIN          2       0.005   full    0.7942     0.8082     1.67      
+Cora       GIN          2       0.005   sample  0.8528     0.8645     46.03     
+  -> Sample vs Full: AUC delta=+0.0586, AP delta=+0.0563, Time delta=+44.36s
+Cora       GIN          3       0.01    full    0.6736     0.7007     1.97      
+Cora       GIN          3       0.01    sample  0.7986     0.8183     47.25     
+  -> Sample vs Full: AUC delta=+0.1250, AP delta=+0.1176, Time delta=+45.28s
+Cora       GIN          3       0.005   full    0.7467     0.7717     1.99      
+Cora       GIN          3       0.005   sample  0.8022     0.8100     52.75     
+  -> Sample vs Full: AUC delta=+0.0555, AP delta=+0.0383, Time delta=+50.76s
+Citeseer   GCN          2       0.01    full    0.8680     0.8808     2.15      
+Citeseer   GCN          2       0.01    sample  0.8850     0.8939     74.88     
+  -> Sample vs Full: AUC delta=+0.0170, AP delta=+0.0131, Time delta=+72.73s
+Citeseer   GCN          2       0.005   full    0.9140     0.9286     2.15      
+Citeseer   GCN          2       0.005   sample  0.9087     0.9183     74.29     
+  -> Sample vs Full: AUC delta=-0.0053, AP delta=-0.0103, Time delta=+72.14s
+Citeseer   GCN          3       0.01    full    0.8252     0.8489     2.50      
+Citeseer   GCN          3       0.01    sample  0.8630     0.8726     81.11     
+  -> Sample vs Full: AUC delta=+0.0378, AP delta=+0.0237, Time delta=+78.61s
+Citeseer   GCN          3       0.005   full    0.8831     0.8923     2.50      
+Citeseer   GCN          3       0.005   sample  0.9029     0.9128     80.83     
+  -> Sample vs Full: AUC delta=+0.0198, AP delta=+0.0205, Time delta=+78.33s
+Citeseer   GAT          2       0.01    full    0.8647     0.8730     2.75      
+Citeseer   GAT          2       0.01    sample  0.8998     0.9064     88.51     
+  -> Sample vs Full: AUC delta=+0.0351, AP delta=+0.0334, Time delta=+85.76s
+Citeseer   GAT          2       0.005   full    0.9073     0.9079     2.81      
+Citeseer   GAT          2       0.005   sample  0.8888     0.8890     84.20     
+  -> Sample vs Full: AUC delta=-0.0185, AP delta=-0.0189, Time delta=+81.39s
+Citeseer   GAT          3       0.01    full    0.7976     0.7879     3.21      
+Citeseer   GAT          3       0.01    sample  0.8125     0.8022     97.33     
+  -> Sample vs Full: AUC delta=+0.0149, AP delta=+0.0143, Time delta=+94.12s
+Citeseer   GAT          3       0.005   full    0.7889     0.7993     3.26      
+Citeseer   GAT          3       0.005   sample  0.7920     0.7771     79.68     
+  -> Sample vs Full: AUC delta=+0.0031, AP delta=-0.0222, Time delta=+76.42s
+Citeseer   GraphSAGE    2       0.01    full    0.8015     0.7615     1.61      
+Citeseer   GraphSAGE    2       0.01    sample  0.8336     0.8314     56.02     
+  -> Sample vs Full: AUC delta=+0.0321, AP delta=+0.0699, Time delta=+54.41s
+Citeseer   GraphSAGE    2       0.005   full    0.8383     0.8495     1.61      
+Citeseer   GraphSAGE    2       0.005   sample  0.8419     0.8539     54.88     
+  -> Sample vs Full: AUC delta=+0.0036, AP delta=+0.0044, Time delta=+53.27s
+Citeseer   GraphSAGE    3       0.01    full    0.7803     0.7791     2.08      
+Citeseer   GraphSAGE    3       0.01    sample  0.7923     0.7771     63.07     
+  -> Sample vs Full: AUC delta=+0.0120, AP delta=-0.0020, Time delta=+60.99s
+Citeseer   GraphSAGE    3       0.005   full    0.8158     0.8183     1.97      
+Citeseer   GraphSAGE    3       0.005   sample  0.8003     0.8084     61.17     
+  -> Sample vs Full: AUC delta=-0.0155, AP delta=-0.0099, Time delta=+59.20s
+Citeseer   GIN          2       0.01    full    0.7663     0.7821     1.74      
+Citeseer   GIN          2       0.01    sample  0.8040     0.8132     56.42     
+  -> Sample vs Full: AUC delta=+0.0377, AP delta=+0.0311, Time delta=+54.68s
+Citeseer   GIN          2       0.005   full    0.7994     0.8194     1.76      
+Citeseer   GIN          2       0.005   sample  0.7973     0.8045     56.82     
+  -> Sample vs Full: AUC delta=-0.0021, AP delta=-0.0149, Time delta=+55.06s
+Citeseer   GIN          3       0.01    full    0.7279     0.7530     2.09      
+Citeseer   GIN          3       0.01    sample  0.7428     0.7386     61.78     
+  -> Sample vs Full: AUC delta=+0.0149, AP delta=-0.0144, Time delta=+59.69s
+Citeseer   GIN          3       0.005   full    0.7604     0.7929     2.02      
+Citeseer   GIN          3       0.005   sample  0.7516     0.7439     64.36     
+  -> Sample vs Full: AUC delta=-0.0088, AP delta=-0.0490, Time delta=+62.34s
+Flickr     GCN          2       0.01    full    0.5495     0.5452     3.96      
